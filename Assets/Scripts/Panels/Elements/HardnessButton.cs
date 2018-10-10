@@ -6,6 +6,13 @@ using UnityEngine.UI;
 public class HardnessButton : Pieka 
 {
 
+	private Color InitialColor;
+
+	void Awake()
+	{
+		InitialColor = GetComponent<Image> ().color;
+	}
+
 	public void SelectMe(Color selectionColor)
 	{
 		GetComponent<Image> ().color = selectionColor;
@@ -13,7 +20,7 @@ public class HardnessButton : Pieka
 
 	public void UnselectMe()
 	{
-		GetComponent<Image> ().color = Color.white;
+		GetComponent<Image> ().color = InitialColor;
 	}
 
 

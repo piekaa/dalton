@@ -75,12 +75,13 @@ public class GameController : Pieka
 
 		Counter++;
 
+		/*
 		if (Advertisement.IsReady () && Counter % 2 == 0)
 		{
 			Advertisement.Show (new ShowOptions{ resultCallback = AdCallback });
 			return;
 		}
-
+*/
 
 
 
@@ -98,7 +99,7 @@ public class GameController : Pieka
 	} 
 
 
-
+/*
 	void AdCallback(ShowResult sr )
 	{
 		StateController.SetActiveState (StateNames.Gameplay); 
@@ -109,7 +110,7 @@ public class GameController : Pieka
 		RuntimeParams.BlueScore = 0;
 		loadNewImage ();
 	}
-
+*/
 
 	private void loadNewImage()
 	{
