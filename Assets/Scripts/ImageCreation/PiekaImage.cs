@@ -12,6 +12,7 @@ public class PiekaImage
 
 	public PiekaImage(int width, int height)
 	{
+	    
 		Width = width;
 		Height = height;
 		pixels = new Color32[width * height];
