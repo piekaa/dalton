@@ -103,10 +103,10 @@ public abstract class Pieka : MonoBehaviour
 		StateController.AddPieka (this);
 
 
-		System.Attribute[] att = (System.Attribute[])GetType ().GetCustomAttributes (true);
+		var attribues = GetType ().GetCustomAttributes (true);
 
 
-		foreach (System.Attribute attribute in att)
+		foreach (var attribute in attribues)
 		{
 			if (attribute is AllowedState)
 			{
@@ -121,10 +121,10 @@ public abstract class Pieka : MonoBehaviour
 		foreach (MethodInfo m in methods)
 		{
  
-			System.Attribute[] attributes = (System.Attribute[]) m.GetCustomAttributes (true);
+			var attributes = (System.Attribute[]) m.GetCustomAttributes (true);
  
 
-			foreach (System.Attribute attribute in attributes)
+			foreach (var attribute in attributes)
 			{
 				if (attribute is OnEvent)
 				{
